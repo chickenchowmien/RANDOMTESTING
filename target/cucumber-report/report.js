@@ -21,3 +21,17 @@ formatter.step({
 formatter.match({
   "location": "HomePageFeaturesStep.the_user_is_on_the_fourstay_home_page()"
 });
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on the registration options",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "HomePageFeaturesStep.the_user_clicks_on_the_registration_options()"
+});
+formatter.result({
+  "status": "passed"
+});
+});

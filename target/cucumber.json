@@ -1,0 +1,52 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Go to home page and check for basic elements",
+        "description": "",
+        "id": "checking-basic-features-on-home-page;go-to-home-page-and-check-for-basic-elements",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4578257501,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user is on the fourstay home page",
+            "match": {
+              "location": "HomePageFeaturesStep.the_user_is_on_the_fourstay_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1864992159,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user clicks on the registration options",
+            "match": {
+              "location": "HomePageFeaturesStep.the_user_clicks_on_the_registration_options()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@first"
+          }
+        ]
+      }
+    ],
+    "name": "Checking basic features on home page",
+    "description": "",
+    "id": "checking-basic-features-on-home-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/HomePageFeatures.feature",
+    "tags": []
+  }
+]

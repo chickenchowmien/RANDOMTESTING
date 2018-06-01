@@ -1,11 +1,13 @@
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\utilities\DriverManager.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\utilities\DriverType.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\runners\CukesRunner.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\utilities\ChromeDriverManager.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\utilities\FirefoxDriverManager.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\stepdefinitions\DemoStepDef.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\pages\HomePage.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\runners\SmokeTestRunner.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\utilities\DriverManagerFactory.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\utilities\HomePageConstants.java
-C:\Users\Dell_J\Intellij Projects\fourtstaytesting\src\test\java\com\fourstay\utilities\SingleDriver.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\stepdefinitions\NewFile.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\utilities\SingleDriver.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\utilities\DriverType.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\utilities\ChromeDriverManager.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\pages\HomePage.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\stepdefinitions\HomePageFeaturesStep.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\utilities\DriverManager.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\stepdefinitions\Test.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\runners\CukesRunner.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\utilities\HomePageConstants.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\utilities\FirefoxDriverManager.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\stepdefinitions\Anything.java
+C:\Users\Andy\RANDOMTESTING\src\test\java\com\fourstay\utilities\DriverManagerFactory.java
