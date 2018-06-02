@@ -1,150 +1,151 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.fourstay-staging.herokuapp</groupId>
-    <artifactId>fourtstaytesting</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <properties>
-        <!--the following line eliminates a WARNING: Using platform(Cp1252 actually) to copy filtered resources...-->
-        <!--it's a specified best practise to define a character scheme-->
-        <!--if you paste something that is ASCII, it will safely be converted to UTF-8 and will prevent complications
-         -->
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        <selenium.version>3.12.0</selenium.version>
-        <selenium.firefox.version>3.12.0</selenium.firefox.version>
-        <selenium.remote.version>3.12.0</selenium.remote.version>
-        <selenium.chrome.version>3.12.0</selenium.chrome.version>
-        <selenium.ie.version>3.12.0</selenium.ie.version>
-        <selenium.edge.version>3.12.0</selenium.edge.version>
-        <selenium.safari.version>3.12.0</selenium.safari.version>
-        <selenium.htmlunit.version>2.52.0</selenium.htmlunit.version>
-        <cucumber.java.version>3.0.1</cucumber.java.version>
-        <cucumber.testng.version>3.0.1</cucumber.testng.version>
-        <cucumber.version>3.0.1</cucumber.version>
-    </properties>
-
-
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>${selenium.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-firefox-driver</artifactId>
-            <version>${selenium.firefox.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-remote-driver</artifactId>
-            <version>${selenium.remote.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-chrome-driver</artifactId>
-            <version>${selenium.chrome.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-htmlunit-driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-htmlunit-driver</artifactId>
-            <version>${selenium.htmlunit.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-ie-driver</artifactId>
-            <version>${selenium.ie.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-safari-driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-safari-driver</artifactId>
-            <version>${selenium.safari.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
-        <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-edge-driver</artifactId>
-            <version>${selenium.edge.version}</version>
-        </dependency>
+	<groupId>com.fourstay-staging.herokuapp</groupId>
+	<artifactId>fourtstaytesting</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<properties>
+		<!--the following line eliminates a WARNING: Using platform(Cp1252 actually) 
+			to copy filtered resources... -->
+		<!--it's a specified best practise to define a character scheme -->
+		<!--if you paste something that is ASCII, it will safely be converted to 
+			UTF-8 and will prevent complications -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<selenium.version>3.12.0</selenium.version>
+		<selenium.firefox.version>3.12.0</selenium.firefox.version>
+		<selenium.remote.version>3.12.0</selenium.remote.version>
+		<selenium.chrome.version>3.12.0</selenium.chrome.version>
+		<selenium.ie.version>3.12.0</selenium.ie.version>
+		<selenium.edge.version>3.12.0</selenium.edge.version>
+		<selenium.safari.version>3.12.0</selenium.safari.version>
+		<selenium.htmlunit.version>2.52.0</selenium.htmlunit.version>
+		<cucumber.java.version>3.0.1</cucumber.java.version>
+		<cucumber.testng.version>3.0.1</cucumber.testng.version>
+		<cucumber.version>3.0.1</cucumber.version>
+	</properties>
 
 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-core</artifactId>
-            <version>${cucumber.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>${cucumber.java.version}</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>${cucumber.testng.version}</version>
-        </dependency>
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-firefox-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>${selenium.firefox.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-remote-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>${selenium.remote.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>${selenium.chrome.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-htmlunit-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-htmlunit-driver</artifactId>
+			<version>${selenium.htmlunit.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-ie-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-ie-driver</artifactId>
+			<version>${selenium.ie.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-safari-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-safari-driver</artifactId>
+			<version>${selenium.safari.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-edge-driver</artifactId>
+			<version>${selenium.edge.version}</version>
+		</dependency>
 
 
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.java.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>${cucumber.testng.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>3.1.0</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>2.21.0</version>
+					<configuration>
+						<suiteXmlFiles>
+							<suiteXmlFile>SmokeTestRunner.xml</suiteXmlFile>
+						</suiteXmlFiles>
+						<testFailureIgnore>true</testFailureIgnore>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>net.masterthought</groupId>
+					<artifactId>maven-cucumber-reporting</artifactId>
+					<version>3.15.0</version>
+					<executions>
+						<execution>
+							<id>execution</id>
+							<phase>verify</phase>
+							<goals>
+								<goal>generate</goal>
+							</goals>
+							<configuration>
+								<projectname>TestProject</projectname>
+								<!-- path to the report that will be generated -->
+								<outputdirectory>${project.build.directory}/cucumber-html-reports</outputdirectory>
+								<!-- path to the json file that will be used to genetrate report -->
+								<!-- it has to match the one on the cukesrunner -->
+								<cucumberoutput>${project.build.directory}/target/cucumber.json</cucumberoutput>
 
+							</configuration>
+						</execution>
+					</executions>
 
-
-    </dependencies>
-    <build>
-        <pluginManagement>
-            <plugins>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.21.0</version>
-                    <configuration>
-                        <suiteXmlFiles>
-                            <suiteXmlFile>SmokeTestRunner.xml</suiteXmlFile>
-                        </suiteXmlFiles>
-                        <testFailureIgnore>true</testFailureIgnore>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>net.masterthought</groupId>
-                    <artifactId>maven-cucumber-reporting</artifactId>
-                    <version>3.15.0</version>
-                    <executions>
-                        <execution>
-                            <id>execution</id>
-                            <phase>verify</phase>
-                            <goals>
-                                <goal>generate</goal>
-                            </goals>
-                            <configuration>
-                                <projectname>TestProject</projectname>
-                                <!-- path to the report that will be generated -->
-                                <outputdirectory>${project.build.directory}/cucumber-html-reports</outputdirectory>
-                                <!-- path to the json file that will be used to genetrate report -->
-                                <!-- it has to match the one on the cukesrunner -->
-                                <cucumberoutput>${project.build.directory}/target/cucumber.json</cucumberoutput>
-
-                            </configuration>
-                        </execution>
-                    </executions>
-
-                </plugin>
-            </plugins>
-        </pluginManagement>
-    </build>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 
 </project>

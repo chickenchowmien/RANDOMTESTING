@@ -4,49 +4,61 @@
     "elements": [
       {
         "line": 3,
-        "name": "Go to home page and check for basic elements",
+        "name": "verifying number of customers in api",
         "description": "",
-        "id": "checking-basic-features-on-home-page;go-to-home-page-and-check-for-basic-elements",
+        "id": "profile-for-customer-verify-api;verifying-number-of-customers-in-api",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4578257501,
+              "duration": 1734928713,
               "status": "passed"
             },
             "line": 4,
-            "name": "the user is on the fourstay home page",
+            "name": "the user sends request for a female name",
             "match": {
-              "location": "HomePageFeaturesStep.the_user_is_on_the_fourstay_home_page()"
+              "location": "APIDay2.the_user_sends_request_for_a_female_name()"
             },
-            "keyword": "Given "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 1864992159,
+              "duration": 319823,
               "status": "passed"
             },
             "line": 5,
-            "name": "the user clicks on the registration options",
+            "name": "we should get back a valid status code",
             "match": {
-              "location": "HomePageFeaturesStep.the_user_clicks_on_the_registration_options()"
+              "location": "APIDay2.we_should_get_back_a_valid_status_code1()"
             },
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 339923,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "gender should be female",
+            "match": {
+              "location": "APIDay2.gender_should_be_female()"
+            },
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@first"
+            "name": "@account"
           }
         ]
       }
     ],
-    "name": "Checking basic features on home page",
+    "name": "Profile for customer verify api",
     "description": "",
-    "id": "checking-basic-features-on-home-page",
+    "id": "profile-for-customer-verify-api",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/HomePageFeatures.feature",
+    "uri": "src/test/resources/features/Account.feature",
     "tags": []
   }
 ]
