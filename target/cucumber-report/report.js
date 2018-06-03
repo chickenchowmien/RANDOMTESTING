@@ -5,41 +5,41 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.scenario({
-  "name": "verifying number of customers in api",
+  "name": "request invalid number of names",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@account"
+      "name": "@negative"
     }
   ]
 });
 formatter.step({
-  "name": "the user sends request for a female name",
+  "name": "the user sends a request for zero names",
   "keyword": "When "
 });
 formatter.match({
-  "location": "APIDay2.the_user_sends_request_for_a_female_name()"
+  "location": "NegativeScenario.the_user_sends_a_request_for_zero_names()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "we should get back a valid status code",
+  "name": "we should get back a invalid status code of 400",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "APIDay2.we_should_get_back_a_valid_status_code1()"
+  "location": "NegativeScenario.we_should_get_back_a_invalid_status_code_of(Integer)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "gender should be female",
+  "name": "the error message should say \"Amount of requested names exceeds maximum allowed\"",
   "keyword": "And "
 });
 formatter.match({
-  "location": "APIDay2.gender_should_be_female()"
+  "location": "NegativeScenario.the_error_message_should_say(String)"
 });
 formatter.result({
   "status": "passed"

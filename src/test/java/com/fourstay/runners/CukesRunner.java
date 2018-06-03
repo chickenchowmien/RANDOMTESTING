@@ -9,7 +9,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
                 "html:target/cucumber-report",
                 "json:target/cucumber.json"
         },
-        tags = "@account",
+        tags = "@negative",
         features = "src/test/resources/features/",
         glue = "com/fourstay/stepdefinitions",
         dryRun = false
