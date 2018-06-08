@@ -12,7 +12,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
         tags = "@first",
         features = "src/test/resources/features/",
         glue = "com/fourstay/stepdefinitions",
-        dryRun = true
+        dryRun = false
 
 )
 public class CukesRunner extends AbstractTestNGCucumberTests {
