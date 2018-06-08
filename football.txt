@@ -1,2 +1,3 @@
 master input this is also edited
-james input
+james (deleted input)
+more input from master
